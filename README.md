@@ -32,57 +32,60 @@ The project architecture consists of the following components:
 - Power BI Desktop
 
 ### Steps
-Create Resources in Azure:
-
-1. Set up an Azure Data Factory instance.
+1. Create Resources in Azure:
+- Set up an Azure Data Factory instance.
 - Create a storage account with a Blob Storage container.
 - Set up an Azure Databricks workspace.
-- SQL Server Configuration:
 
-Ensure the SQL Server is accessible from Azure services.
-Create necessary tables and populate them with sales data.
-Azure Data Factory:
+2. SQL Server Configuration:
+- Ensure the SQL Server is accessible from Azure services.
+- Create necessary tables and populate them with sales data.
 
-Create linked services for SQL Server and Blob Storage.
-Develop and publish the pipeline to extract data from SQL Server and load it into Blob Storage.
-Azure Databricks:
+3. Azure Data Factory:
+- Create linked services for SQL Server and Blob Storage.
+- Develop and publish the pipeline to extract data from SQL Server and load it into Blob Storage.
 
-Configure a cluster and workspace.
-Develop notebooks to transform the data and save the results back to Blob Storage.
-Power BI:
+4. Azure Databricks:
+- Configure a cluster and workspace.
+- Develop notebooks to transform the data and save the results back to Blob Storage.
 
-Connect to the transformed data in Blob Storage.
-Create dashboards to visualize the sales data.
-Data Pipeline
-Extraction:
+5. Power BI:
+- Connect to the transformed data in Blob Storage.
+- Create dashboards to visualize the sales data.
 
-Use Azure Data Factory to create a pipeline that extracts data from SQL Server.
-Load the extracted data into Azure Blob Storage in a raw format.
-Loading:
+## Data Pipeline
 
-The raw data is stored in Blob Storage for further processing.
-Data Transformation
-Azure Databricks:
-Develop notebooks to read raw data from Blob Storage.
-Apply necessary transformations, such as cleaning, aggregation, and formatting.
-Write the transformed data back to Blob Storage in a structured format suitable for analysis.
-Data Visualization
-Power BI:
-Import the transformed dataset from Blob Storage.
-Create interactive and insightful dashboards.
-Customize visuals to meet client requirements.
-Usage
-Running the Pipeline:
+1. Extraction:
+- Use Azure Data Factory to create a pipeline that extracts data from SQL Server.
+- Load the extracted data into Azure Blob Storage in a raw format.
 
-Trigger the Azure Data Factory pipeline to refresh data.
-Monitor the pipeline for successful execution.
-Analyzing Data:
+2. Loading:
+- The raw data is stored in Blob Storage for further processing.
 
-Open Power BI Desktop.
-Refresh the dataset to load the latest transformed data.
-Explore the dashboards to gain insights into pizza sales trends.
-Contributing
+## Data Transformation
+1. Azure Databricks:
+- Develop notebooks to read raw data from Blob Storage.
+- Apply necessary transformations, such as cleaning, aggregation, and formatting.
+- Write the transformed data back to Blob Storage in a structured format suitable for analysis.
+
+## Data Visualization
+1. Power BI:
+- Import the transformed dataset from Blob Storage.
+- Create interactive and insightful dashboards.
+- Customize visuals to meet client requirements.
+
+### Usage
+1. Running the Pipeline:
+- Trigger the Azure Data Factory pipeline to refresh data.
+- Monitor the pipeline for successful execution.
+
+2. Analyzing Data:
+- Open Power BI Desktop.
+- Refresh the dataset to load the latest transformed data.
+- Explore the dashboards to gain insights into pizza sales trends.
+
+## Contributing
 Contributions are welcome! Please create a pull request or open an issue to discuss any changes or improvements.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
