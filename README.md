@@ -37,49 +37,48 @@ The project architecture consists of the following components:
 - Create a storage account with a Blob Storage container.
 - Set up an Azure Databricks workspace.
 
-2. SQL Server Configuration:
+#### 2. SQL Server Configuration:
 - Ensure the SQL Server is accessible from Azure services.
 - Create necessary tables and populate them with sales data.
 
-3. Azure Data Factory:
+#### 3. Azure Data Factory:
 - Create linked services for SQL Server and Blob Storage.
 - Develop and publish the pipeline to extract data from SQL Server and load it into Blob Storage.
 
-4. Azure Databricks:
+#### 4. Azure Databricks:
 - Configure a cluster and workspace.
 - Develop notebooks to transform the data and save the results back to Blob Storage.
 
-5. Power BI:
+#### 5. Power BI:
 - Connect to the transformed data in Blob Storage.
 - Create dashboards to visualize the sales data.
 
 ## Data Pipeline
-
-1. Extraction:
+#### 1. Extraction:
 - Use Azure Data Factory to create a pipeline that extracts data from SQL Server.
 - Load the extracted data into Azure Blob Storage in a raw format.
 
-2. Loading:
+#### 2. Loading:
 - The raw data is stored in Blob Storage for further processing.
 
 ## Data Transformation
-1. Azure Databricks:
+#### 1. Azure Databricks:
 - Develop notebooks to read raw data from Blob Storage.
 - Apply necessary transformations, such as cleaning, aggregation, and formatting.
 - Write the transformed data back to Blob Storage in a structured format suitable for analysis.
 
 ## Data Visualization
-1. Power BI:
+#### 1. Power BI:
 - Import the transformed dataset from Blob Storage.
 - Create interactive and insightful dashboards.
 - Customize visuals to meet client requirements.
 
 ## Usage
-1. Running the Pipeline:
+#### 1. Running the Pipeline:
 - Trigger the Azure Data Factory pipeline to refresh data.
 - Monitor the pipeline for successful execution.
 
-2. Analyzing Data:
+#### 2. Analyzing Data:
 - Open Power BI Desktop.
 - Refresh the dataset to load the latest transformed data.
 - Explore the dashboards to gain insights into pizza sales trends.
