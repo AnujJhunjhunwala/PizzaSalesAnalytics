@@ -74,7 +74,7 @@ The project architecture consists of the following components:
 - Create interactive and insightful dashboards.
 - Customize visuals to meet client requirements.
 
-### Usage
+## Usage
 1. Running the Pipeline:
 - Trigger the Azure Data Factory pipeline to refresh data.
 - Monitor the pipeline for successful execution.
