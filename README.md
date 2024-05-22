@@ -12,7 +12,7 @@
 - Data Visualization
 - Usage
 - Contributing
-- License
+- Contact
 
 ## Introduction
 This project demonstrates a complete data analytics workflow using Microsoft Azure services. It includes data extraction, transformation, and visualization steps, which are essential for making data-driven decisions.
@@ -87,5 +87,5 @@ The project architecture consists of the following components:
 ## Contributing
 Contributions are welcome! Please create a pull request or open an issue to discuss any changes or improvements.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Contact
+For more information, to provide feedback, or to get involved, please contact me at anujjhunjhunwala98@gmail.com
