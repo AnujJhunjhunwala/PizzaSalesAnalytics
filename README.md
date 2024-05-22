@@ -1,9 +1,9 @@
-## Pizza Sales Analytics using Azure
+# Pizza Sales Analytics using Azure
 
-# Project Overview
+## Project Overview
 - The "Pizza Sales Analytics using Azure" project aims to build a comprehensive data pipeline and analytical solution for pizza sales data. The project involves extracting sales data from SQL Server, transforming it using Azure Databricks, and visualizing it in Power BI to provide insightful dashboards for stakeholders.
 
-# Table of Contents
+## Table of Contents
 - Introduction
 - Architecture
 - Setup and Installation
@@ -17,26 +17,27 @@
 ## Introduction
 This project demonstrates a complete data analytics workflow using Microsoft Azure services. It includes data extraction, transformation, and visualization steps, which are essential for making data-driven decisions.
 
-Architecture
+## Architecture
 The project architecture consists of the following components:
+- SQL Server: The source database containing pizza sales data.
+- Azure Data Factory (ADF): Orchestrates the data pipeline to extract data from SQL Server and load it into Azure Blob Storage.
+- Azure Blob Storage: Serves as the data lake to store raw and transformed data.
+- Azure Databricks: Performs data transformation to clean and format the data.
+- Power BI: Visualizes the transformed data through interactive dashboards.
 
-SQL Server: The source database containing pizza sales data.
-Azure Data Factory (ADF): Orchestrates the data pipeline to extract data from SQL Server and load it into Azure Blob Storage.
-Azure Blob Storage: Serves as the data lake to store raw and transformed data.
-Azure Databricks: Performs data transformation to clean and format the data.
-Power BI: Visualizes the transformed data through interactive dashboards.
-Setup and Installation
-Prerequisites
-Azure subscription
-SQL Server with pizza sales data
-Power BI Desktop
-Steps
+## Setup and Installation
+### Prerequisites
+- Azure subscription
+- SQL Server with pizza sales data
+- Power BI Desktop
+
+### Steps
 Create Resources in Azure:
 
-Set up an Azure Data Factory instance.
-Create a storage account with a Blob Storage container.
-Set up an Azure Databricks workspace.
-SQL Server Configuration:
+1. Set up an Azure Data Factory instance.
+- Create a storage account with a Blob Storage container.
+- Set up an Azure Databricks workspace.
+- SQL Server Configuration:
 
 Ensure the SQL Server is accessible from Azure services.
 Create necessary tables and populate them with sales data.
