@@ -32,7 +32,7 @@ The project architecture consists of the following components:
 - Power BI Desktop
 
 ### Steps
-1. Create Resources in Azure:
+#### 1. Create Resources in Azure:
 - Set up an Azure Data Factory instance.
 - Create a storage account with a Blob Storage container.
 - Set up an Azure Databricks workspace.
